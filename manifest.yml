@@ -1,0 +1,17 @@
+---
+defaults: &defaults
+  memory: 750M   
+  instances: 1
+
+application:
+- name: assignForce
+  path: ./assignforce/
+  routes: 
+  - route: assignforce.cfapps.io
+  <<: *defaults
+- name: discovery
+  pash: ./discovery/
+  routes:
+  - route: discovery-service.cfapps.io
+  <<: *defaults
+

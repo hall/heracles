@@ -1,0 +1,30 @@
+[submodule "batch"]
+	path = batch
+	url = https://github.com/revaturelabs/hydra-batch-service
+[submodule "curriculum"]
+	path = curriculum
+	url = https://github.com/revaturelabs/hydra-curriculum-service
+[submodule "gateway"]
+	path = gateway
+	url = https://github.com/revaturelabs/hydra-gateway-service
+[submodule "settings"]
+	path = settings
+	url = https://github.com/revaturelabs/hydra-settings-service
+[submodule "skills"]
+	path = skills
+	url = https://github.com/revaturelabs/hydra-skills-service
+[submodule "trainer"]
+	path = trainer
+	url = https://github.com/revaturelabs/hydra-trainer-service
+[submodule "unavailable"]
+	path = unavailable
+	url = https://github.com/revaturelabs/hydra-unavailable-service
+[submodule "assignforce"]
+	path = assignforce
+	url = https://github.com/revaturelabs/assignforce-client
+[submodule "address"]
+	path = address
+	url = https://github.com/revaturelabs/hydra-address-service
+[submodule "discovery"]
+	path = discovery
+	url = https://github.com/revaturelabs/hydra-discovery-service
