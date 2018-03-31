@@ -2,16 +2,24 @@
 defaults: &defaults
   memory: 750M   
   instances: 1
+  space: development
+  # path: 
 
-application:
-- name: assignForce
-  path: ./assignforce/
+applications:
+- name: assignforce
+  #path: ./assignforce/
   routes: 
   - route: assignforce.cfapps.io
   <<: *defaults
-- name: discovery
-  pash: ./discovery/
-  routes:
-  - route: discovery-service.cfapps.io
+
+- name: batch
+  path: ./batch/target/BatchRepositoryService-1.jar
+  routes: 
+  - route: batch-service.cfapps.io
   <<: *defaults
 
+- name: gateway
+  path: ./gateway/target/hydra-gateway-service-0.0.1-SNAPSHOT.jar
+  routes: 
+  - route: hydra.cfapps.io
+  <<: *defaults

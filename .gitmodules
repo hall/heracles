@@ -7,9 +7,6 @@
 [submodule "gateway"]
 	path = gateway
 	url = https://github.com/revaturelabs/hydra-gateway-service
-[submodule "settings"]
-	path = settings
-	url = https://github.com/revaturelabs/hydra-settings-service
 [submodule "skills"]
 	path = skills
 	url = https://github.com/revaturelabs/hydra-skills-service

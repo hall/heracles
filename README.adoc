@@ -1,0 +1,37 @@
+= heracles: the hydra management system
+
+`hydra` is a system of microservices designed to transmit and/or manipulate data for https://revature.com[Revature].
+
+Read the docs at https://hydra.cfapps.io/swagger-ui.html.
+
+This repository exists to synchrnize versioning and provide ecosystem metadata.
+
+== the services
+
+`hydra` is composed of the following services (accessed through its
+https://github.com/revaturelabs/hydra-gateway-service[gateway]):
+
+[horizontal]
+https://github.com/revaturelabs/hydra-address-service[address]:: stores geographical addresses
+https://github.com/revaturelabs/hydra-batch-service[batch]:: create, access, or modify training batches
+https://github.com/revaturelabs/hydra-curriculum-service[curriculum]:: coursework curriculum
+https://github.com/revaturelabs/hydra-skills-service[skills]:: technical skillsets
+https://github.com/revaturelabs/hydra-trainer-service[trainer]:: operate on trainers
+https://github.com/revaturelabs/hydra-unavailable-service[unavailable]:: mark an employee as unavailable
+
+NOTE: Only services which are being utilized by `assignforce` are currently listed here.
+
+The 
+http://docs.pivotal.io/spring-cloud-services/1-5/common/service-registry/index.html[_discovery_],
+http://docs.pivotal.io/spring-cloud-services/1-5/common/config-server/[_configuration_],
+http://docs.pivotal.io/spring-cloud-services/1-5/common/circuit-breaker/index.html[_circuit breaker_],
+http://docs.run.pivotal.io/marketplace/services/cloudamqp.html[_messaging_]
+and
+http://docs.run.pivotal.io/marketplace/services/elephantsql.html[_persistance_]
+services are provided through http://docs.run.pivotal.io/[Pivotal Web Services].
+
+== clients
+
+[horizontal]
+https://github.com/revaturelabs/assignforce-client[assignforce]:: batch management interface
+https://github.com/revaturelabs/calibre[calibre]:: performance tracking system
