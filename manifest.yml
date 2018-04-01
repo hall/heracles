@@ -42,6 +42,16 @@ applications:
   no-route: true
   <<: *defaults
 
+- name: trainer
+  path: ./trainer/target/trainer-0.0.1.jar
+  no-route: true
+  <<: *defaults
+
+- name: skills
+  path: ./skills/target/skills-0.0.1.jar
+  no-route: true
+  <<: *defaults
+
 - name: unavailable
   path: ./unavailable/target/unavailable-0.0.1.jar
   no-route: true
