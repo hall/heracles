@@ -5,6 +5,10 @@ defaults: &defaults
   space: development
   # path: 
 
+############################################################
+# clients
+############################################################
+
 applications:
 - name: assignforce
   path: ./CLIENTS/assignforce/
@@ -18,17 +22,27 @@ applications:
 ############################################################
 
 - name: gateway
-  path: ./gateway/target/hydra-gateway-service-0.0.1-SNAPSHOT.jar
+  path: ./gateway/target/gateway-0.0.1.jar
   routes: 
   - route: hydra.cfapps.io
   <<: *defaults
 
+- name: address
+  path: ./address/target/address-0.0.1.jar
+  no-route: true
+  <<: *defaults
+
 - name: batch
-  path: ./batch/target/BatchRepositoryService-1.jar
+  path: ./batch/target/batch-0.0.1.jar
   no-route: true
   <<: *defaults
 
 - name: curriculum
-  path: ./curriculum/target/curriculumService-0.0.1-SNAPSHOT.jar
+  path: ./curriculum/target/curriculum-0.0.1.jar
+  no-route: true
+  <<: *defaults
+
+- name: unavailable
+  path: ./unavailable/target/unavailable-0.0.1.jar
   no-route: true
   <<: *defaults
