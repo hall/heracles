@@ -17,7 +17,7 @@
 	path = unavailable
 	url = https://github.com/revaturelabs/hydra-unavailable-service
 [submodule "assignforce"]
-	path = assignforce
+	path = clients/assignforce
 	url = https://github.com/revaturelabs/assignforce-client
 [submodule "address"]
 	path = address
