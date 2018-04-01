@@ -7,19 +7,28 @@ defaults: &defaults
 
 applications:
 - name: assignforce
-  #path: ./assignforce/
+  path: ./CLIENTS/assignforce/
   routes: 
   - route: assignforce.cfapps.io
   <<: *defaults
 
-- name: batch
-  path: ./batch/target/BatchRepositoryService-1.jar
-  routes: 
-  - route: batch-service.cfapps.io
-  <<: *defaults
+
+############################################################
+# services
+############################################################
 
 - name: gateway
   path: ./gateway/target/hydra-gateway-service-0.0.1-SNAPSHOT.jar
   routes: 
   - route: hydra.cfapps.io
+  <<: *defaults
+
+- name: batch
+  path: ./batch/target/BatchRepositoryService-1.jar
+  no-route: true
+  <<: *defaults
+
+- name: curriculum
+  path: ./curriculum/target/curriculumService-0.0.1-SNAPSHOT.jar
+  no-route: true
   <<: *defaults
