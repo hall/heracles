@@ -1,0 +1,18 @@
+= contributing to hydra
+
+`hydra` is composed of microservices following the https://12factor.net[12factor] methodology.
+They are (not strictly) Java projects built with Spring Boot.
+
+== naming conventions
+
+In the following points, `<name>` denotes the name of the service in question.
+
+Services are
+
+ - hosted on Github under `revaturelabs/hydra-<name>-service`
+ - packages named as `com.revature.hydra.<name>`
+
+== build pipeline
+
+`hydra` services are built with Travis-CI and deployed to PCF under the `august-duet.org` organization.
+Production builds are made from the `master` branch and development builds from the `develop` branch.

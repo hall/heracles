@@ -4,7 +4,7 @@
 
 Read the docs at https://hydra.cfapps.io/swagger-ui.html.
 
-This repository exists to synchrnize versioning and provide ecosystem metadata.
+This repository exists to synchronize versioning and provide ecosystem metadata.
 
 == the services
 
@@ -35,3 +35,8 @@ services are provided through http://docs.run.pivotal.io/[Pivotal Web Services].
 [horizontal]
 https://github.com/revaturelabs/assignforce-client[assignforce]:: batch management interface
 https://github.com/revaturelabs/calibre[calibre]:: performance tracking system
+
+
+== contributing
+
+Please read link:CONTRIBUTING.adoc[].
