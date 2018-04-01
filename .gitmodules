@@ -19,3 +19,6 @@
 [submodule "address"]
 	path = address
 	url = https://github.com/revaturelabs/hydra-address-service
+[submodule "CLIENTS/assignforce"]
+	path = CLIENTS/assignforce
+	url = https://github.com/revaturelabs/assignforce-client
