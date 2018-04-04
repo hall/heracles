@@ -2,7 +2,9 @@
 
 `hydra` is a system of microservices designed to transmit and/or manipulate data for https://revature.com[Revature].
 
-Read the docs at https://hydra.cfapps.io/swagger-ui.html.
+image:https://sonarcloud.io/images/project_badges/sonarcloud-black.svg["sonarcloud badge", link="https://sonarcloud.io/organizations/revaturelabs/projects"]
+
+The api is documented at https://hydra.cfapps.io/swagger-ui.html.
 
 This repository exists to synchronize versioning and provide ecosystem metadata.
 

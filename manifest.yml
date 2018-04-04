@@ -5,11 +5,11 @@ defaults: &defaults
   space: development
   # path: 
 
+applications:
 ############################################################
 # clients
 ############################################################
 
-applications:
 - name: assignforce
   path: ./CLIENTS/assignforce/
   routes: 
