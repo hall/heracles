@@ -10,7 +10,9 @@ In the following points, `<name>` denotes the name of the service in question.
 Services are
 
  - hosted on Github under `revaturelabs/hydra-<name>-service`
- - packages named as `com.revature.hydra.<name>`
+ - Maven projects named as `com.revature.hydra.<name>`
+ - build with Travis-Ci at https://travis-ci.org/revaturelabs.
+ - analyzed with SonarQube at https://sonarcloud.io/organizations/revaturelabs/projects. 
 
 == build pipeline
 

@@ -11,15 +11,15 @@ This repository exists to synchronize versioning and provide ecosystem metadata.
 == the services
 
 `hydra` is composed of the following services (accessed through its
-https://github.com/revaturelabs/hydra-gateway-service[gateway] image:https://travis-ci.org/revaturelabs/hydra-gateway-service.svg?branch=master["Build Status", link="https://travis-ci.org/revaturelabs/hydra-gateway-service"] ):
+https://github.com/revaturelabs/hydra-gateway-service[gateway] image:https://travis-ci.org/revaturelabs/hydra-gateway-service.svg?branch=develop["Build Status", link="https://travis-ci.org/revaturelabs/hydra-gateway-service"] ):
 
 [horizontal]
-https://github.com/revaturelabs/hydra-address-service[address]:: image:https://travis-ci.org/revaturelabs/hydra-address-service.svg?branch=master["Build Status", link="https://travis-ci.org/revaturelabs/hydra-address-service"] stores geographical addresses
-https://github.com/revaturelabs/hydra-batch-service[batch]:: image:https://travis-ci.org/revaturelabs/hydra-batch-service.svg?branch=master["Build Status", link="https://travis-ci.org/revaturelabs/hydra-batch-service"] create, access, or modify training batches
-https://github.com/revaturelabs/hydra-curriculum-service[curriculum]:: image:https://travis-ci.org/revaturelabs/hydra-curriculum-service.svg?branch=master["Build Status", link="https://travis-ci.org/revaturelabs/hydra-curriculum-service"] coursework curriculum
-https://github.com/revaturelabs/hydra-skills-service[skills]:: image:https://travis-ci.org/revaturelabs/hydra-skills-service.svg?branch=master["Build Status", link="https://travis-ci.org/revaturelabs/hydra-skills-service"] technical skillsets
-https://github.com/revaturelabs/hydra-trainer-service[trainer]:: image:https://travis-ci.org/revaturelabs/hydra-trainer-service.svg?branch=master["Build Status", link="https://travis-ci.org/revaturelabs/hydra-trainer-service"] operate on trainers
-https://github.com/revaturelabs/hydra-unavailable-service[unavailable]:: image:https://travis-ci.org/revaturelabs/hydra-unavailable-service.svg?branch=master["Build Status", link="https://travis-ci.org/revaturelabs/hydra-unavailable-service"] mark an employee as unavailable
+https://github.com/revaturelabs/hydra-address-service[address]:: image:https://travis-ci.org/revaturelabs/hydra-address-service.svg?branch=develop["Build Status", link="https://travis-ci.org/revaturelabs/hydra-address-service"] stores geographical addresses
+https://github.com/revaturelabs/hydra-batch-service[batch]:: image:https://travis-ci.org/revaturelabs/hydra-batch-service.svg?branch=develop["Build Status", link="https://travis-ci.org/revaturelabs/hydra-batch-service"] create, access, or modify training batches
+https://github.com/revaturelabs/hydra-curriculum-service[curriculum]:: image:https://travis-ci.org/revaturelabs/hydra-curriculum-service.svg?branch=develop["Build Status", link="https://travis-ci.org/revaturelabs/hydra-curriculum-service"] coursework curriculum
+https://github.com/revaturelabs/hydra-skills-service[skills]:: image:https://travis-ci.org/revaturelabs/hydra-skills-service.svg?branch=develop["Build Status", link="https://travis-ci.org/revaturelabs/hydra-skills-service"] technical skillsets
+https://github.com/revaturelabs/hydra-trainer-service[trainer]:: image:https://travis-ci.org/revaturelabs/hydra-trainer-service.svg?branch=develop["Build Status", link="https://travis-ci.org/revaturelabs/hydra-trainer-service"] operate on trainers
+https://github.com/revaturelabs/hydra-unavailable-service[unavailable]:: image:https://travis-ci.org/revaturelabs/hydra-unavailable-service.svg?branch=develop["Build Status", link="https://travis-ci.org/revaturelabs/hydra-unavailable-service"] mark an employee as unavailable
 
 NOTE: Only services which are being utilized by `assignforce` are currently listed here.
 
@@ -35,7 +35,7 @@ services are provided through http://docs.run.pivotal.io/[Pivotal Web Services].
 == clients
 
 [horizontal]
-https://github.com/revaturelabs/assignforce-client[assignforce]:: image:https://travis-ci.org/revaturelabs/assignforce-client.svg?branch=master["Build Status", link="https://travis-ci.org/revaturelabs/assignforce-client"] batch management interface
+https://github.com/revaturelabs/assignforce-client[assignforce]:: image:https://travis-ci.org/revaturelabs/assignforce-client.svg?branch=develop["Build Status", link="https://travis-ci.org/revaturelabs/assignforce-client"] batch management interface
 https://github.com/revaturelabs/caliber[caliber]:: performance tracking system
 
 
