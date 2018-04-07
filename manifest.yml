@@ -27,31 +27,31 @@ applications:
   <<: *defaults
 
 - name: address
-  path: ./address/target/address-0.0.1.jar
+  path: ./address/target/hydra-address-0.0.1.jar
   no-route: true
   <<: *defaults
 
 - name: batch
-  path: ./batch/target/batch-0.0.1.jar
+  path: ./batch/target/hydra-batch-0.0.1.jar
   no-route: true
   <<: *defaults
 
 - name: curriculum
-  path: ./curriculum/target/curriculum-0.0.1.jar
+  path: ./curriculum/target/hydra-curriculum-0.0.1.jar
   no-route: true
   <<: *defaults
 
 - name: trainer
-  path: ./trainer/target/trainer-0.0.1.jar
+  path: ./trainer/target/hydra-trainer-0.0.1.jar
   no-route: true
   <<: *defaults
 
 - name: skills
-  path: ./skills/target/skills-0.0.1.jar
+  path: ./skills/target/hydra-skills-0.0.1.jar
   no-route: true
   <<: *defaults
 
 - name: unavailable
-  path: ./unavailable/target/unavailable-0.0.1.jar
+  path: ./unavailable/target/hydra-unavailable-0.0.1.jar
   no-route: true
   <<: *defaults

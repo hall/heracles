@@ -22,3 +22,6 @@
 [submodule "CLIENTS/assignforce"]
 	path = CLIENTS/assignforce
 	url = github.com:revaturelabs/assignforce-client
+[submodule "aggregator"]
+	path = aggregator
+	url = github.com:revaturelabs/hydra-aggregator-service
