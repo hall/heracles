@@ -1,9 +1,9 @@
-= contributing to hydra
+= Contributing To Hydra
 
 `hydra` is composed of microservices following the https://12factor.net[12factor] methodology.
 They are (not strictly) Java projects built with Spring Boot.
 
-== naming conventions
+== Naming Conventions
 
 In the following points, `<name>` denotes the name of the service in question.
 
@@ -14,7 +14,19 @@ Services are
  - build with Travis-Ci at https://travis-ci.org/revaturelabs.
  - analyzed with SonarQube at https://sonarcloud.io/organizations/revaturelabs/projects. 
 
-== build pipeline
+== Build Pipeline
 
 `hydra` services are built with Travis-CI and deployed to PCF under the `august-duet.org` organization.
 Production builds are made from the `master` branch and development builds from the `develop` branch.
+
+== Blue/Green Deployment
+
+Blue/Green deployment is a technique which results in near zero-time deployment, that allows for a live production deployment and test deployment. The process in a general sense, although the actual is not much more complex, is a few simple steps
+
+ - Live traffic is routed into your production application, we'll call this route-map 'my-app' and this deployment Blue
+ - Test traffic is routed into your test application, we'll call this route-map 'my-test-app' and this deployment Green
+ - When test is ready for live, we add a route to live traffic to Green and maintain the live traffic route on Blue
+ - Once traffic is successfully shared between Blue and Green, we cut the live traffic route to Blue.
+ - Test traffic is then cut to Green while Blue is either destroyed or retained as a fallback 
+ 
+ This can often be done through a plugin or executed manually through a series of script calls, through research I have determined that while any of the available plugins are not complex to understand, Autopilot is the easiest to implement. This would have been pursued further but we do not have more than our test build and this rotational technique is best suited for having a live and test deployment.
