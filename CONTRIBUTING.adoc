@@ -30,3 +30,5 @@ Blue/Green deployment is a technique which results in near zero-time deployment,
  - Test traffic is then cut to Green while Blue is either destroyed or retained as a fallback 
  
 This can often be done through a plugin or executed manually through a series of script calls, through research I have determined that while any of the available plugins are not complex to understand, Autopilot is the easiest to implement. This would have been pursued further but we do not have more than our test build and this rotational technique is best suited for having a live and test deployment.
+ 
+ - https://github.com/contraband/autopilot
